@@ -81,7 +81,7 @@ int main()
 					fprintf(fp, "0x%04x: 0x%02x\n", regs[j].reg, regs[j].val);
 				else
 					fputs("[firmware image]\n", fp);
-			
+
 			fclose(fp);
 			printf("Files `%s' (%d bytes) and `%s' (%d registers) created\n", fnb, bw, fnr, r);
 		} else
