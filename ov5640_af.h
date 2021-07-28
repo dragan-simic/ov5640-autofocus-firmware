@@ -24,6 +24,7 @@ typedef struct af {
 #include "ov5640_af_4.h"
 #include "ov5640_af_5.h"
 #include "ov5640_af_6.h"
+#include "ov5640_af_7.h"
 
 af ov5640_af[] = { {
 	.data = { .bin = ov5640_af_1 },
@@ -49,5 +50,9 @@ af ov5640_af[] = { {
 	.data = { .regs = ov5640_af_6 },
 	.len  = sizeof(ov5640_af_6) / sizeof(af_reg),
 	.regs = true
+}, {
+	.data = { .bin = ov5640_af_7 },
+	.len  = sizeof(ov5640_af_7) / sizeof(uint8_t),
+	.regs = false
 } };
 
